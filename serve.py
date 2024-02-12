@@ -9,7 +9,7 @@ def seedNumber():
    if request.method == 'GET':
       return socket.gethostname()
    elif request.method == 'POST':
-        cmd = ['python', 'stress_cpu.py']
+        cmd = ['python3', 'stress_cpu.py']
         proc = subprocess.Popen(cmd)
         return 'posted'
    else:
